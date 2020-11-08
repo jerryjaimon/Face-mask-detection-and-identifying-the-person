@@ -7,7 +7,7 @@ from skimage import util
 import os
 
 def random_rotation(image_array: ndarray):
-    # pick a random degree of rotation between 25% on the left and 25% on the right
+    # pick a random degree of rotation between 20% on the left and 20% on the right
     random_degree = random.uniform(-20, 20)
     return sk.transform.rotate(image_array, random_degree)
 
